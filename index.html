@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.11.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <style>
+        html,
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        .carousel-caption h1 {
+            font-size: 80px;
+        }
+
+        .carousel-caption h3 {
+            font-size: 20px;
+        }
+
+        .carousel-caption h2 {
+            font-size: 15px;
+        }
+
+        .h1 {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            font-size: 50px;
+            color: white;
+        }
+
+        .main .block {
+            display: flex;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        @media (max-width: 767px) {
+  .main .block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+
+
+
+        .main .block .emmergency {
+            background: lightseagreen;
+        }
+
+        .main .block .emmergency a {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .main .block .emmergency p {
+            padding-top: 20px;
+        }
+
+        .main .block .top-doctor {
+            background: lightseagreen;
+        }
+
+        .main .block .top-doctor .btn-main {
+            margin-top: 10px;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            transition: all .3s ease;
+        }
+
+        .main .block .top-doctor .btn-main:hover {
+            background: #fff;
+            color: #48bdc5;
+        }
+
+        .main .block .working-time {
+            background: lightseagreen;
+        }
+
+        .main .block .working-time ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main .block .working-time ul li {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .main .block .item {
+            padding: 20px 30px;
+            flex-basis: 33.33%;
+        }
+
+        .main .block .item i,
+        .main .block .item h2,
+        .main .block .item p {
+
+            color: #fff;
+        }
+
+        .main .block .item i {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .main .block .item h2 {
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        .main .block .item p {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">gallary</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Appointment</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+            </div>
+        </nav>
+    </div>
+    <!-- image slider -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" alt="the-buzz-img3" style="height:650px" />
+                <div class="carousel-caption">
+                    <h1 class="display-2">OUR BEST SURGEON</h1>
+                    <h3><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b></h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">VIWE DEMO</button>
+                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" alt="the-buzz-img3" style="height:650px" />
+                <div class="h1"><b>WE CARE ABOUT <br> YOUR HEALTH</b></div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" alt="the-buzz-img3" style="height:650px" />
+                <div class="h1" style="left: 10%; font-size: 40px"><b>Lorem ipsum dolor sit amet <br> consectetur
+                        adipisicing.</b></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- services -->
+
+    <section class="wow slideInUp main py-5">
+        <div class="wow slideInUp container">
+            <div class="wow slideInUp row">
+                <div class="wow slideInUp col-12 col-md-12 col-sm-12">
+                    <div class="wow slideInUp block">
+                        <div class="wow slideInUp emmergency item">
+                            <i class="wow slideInUp fa fa-phone"></i>
+                            <h2>Emergency Cases</h2>
+                            <a href="#">1-800-700-6200</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="wow slideInUp top-doctor item">
+                            <i class="wow slideInUp fa fa-stethoscope"></i>
+                            <h2>24 Hour Service</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia
+                                dicta suscipit vel eum</p>
+                            <a href="#" class="wow slideInUp btn btn-main">Read more</a>
+                        </div>
+                        <div class="wow slideInUp working-time item">
+                            <i class="wow slideInUp far fa-clock"></i>
+                            <h2>Working Hours</h2>
+                            <ul class="wow slideInUp w-hours" style="margin: 0; padding: 0;">
+                                <u style="color: white;">
+                                    <li>Mon - Fri - <span>8:00 - 17:00</span></li>
+                                    <li>Mon - Fri - <span>8:00 - 17:00</span></li>
+                                    <li>Mon - Fri - <span>8:00 - 17:00</span></li>
+                                </u>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow slideInUp features section  py-5" style="background-color: whitesmoke;">
+        <div class="wow slideInUp container">
+            <div class="wow slideInUp row">
+                <div class="wow slideInUp col-sm-12 col-xs-12">
+                    <div class="wow slideInUp content py-4">
+                        <div class="wow slideInUp section-title text-center ">
+                            <h3>Best Features
+                                <span>of our hospital</span>
+                            </h3>
+                            <p class="wow slideInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                commodi corporis est
+                                vitae fugit, incidunt voluptatum dolor facilis cumque deleniti. Lorem ipsum dolor sit
+                                amet. Lorem, ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="background-color: whitesmoke">
+            <div class="wow slideInUp container">
+
+                <div class="wow slideInUp row">
+                    <div class="wow slideInUp col-sm-6">
+                        <div class="wow slideInUp item">
+                            <div class="wow slideInUp icon py-5">
+                                <a href="#">
+                                    <img src="1.png" alt="">
+                                </a>
+                            </div>
+                            <h6>ORTHOPEDICS</h6>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloribus nemo laboriosam dolor fuga
+                                adipisci neque assumenda repudiandae, mollitia corrupti, ducimus alias eos omnis optio
+                                dolore
+                                rem totam voluptatem veniam voluptatum!</p>
+                        </div>
+                    </div>
+                    <div class="wow slideInUp col-sm-6">
+                        <div class="wow slideInUp item">
+                            <div class="wow slideInUp icon py-5">
+                                <a href="#">
+                                    <img src="2.png" alt="">
+                                </a>
+                            </div>
+                            <h6>DIAGNOSTICS </h6>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloribus nemo laboriosam dolor fuga
+                                adipisci neque assumenda repudiandae, mollitia corrupti, ducimus alias eos omnis optio
+                                dolore
+                                rem totam voluptatem veniam voluptatum!</p>
+                        </div>
+                    </div>
+                    <div class="wow slideInUp col-sm-6">
+                        <div class="wow slideInUp item">
+                            <div class="wow slideInUp icon py-5">
+                                <a href="#">
+                                    <img src="3.png" alt="">
+                                </a>
+                            </div>
+                            <h6>PSYCOLOGY </h6>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloribus nemo laboriosam dolor fuga
+                                adipisci neque assumenda repudiandae, mollitia corrupti, ducimus alias eos omnis optio
+                                dolore
+                                rem totam voluptatem veniam voluptatum!</p>
+                        </div>
+                    </div>
+                    <div class="wow slideInUp col-sm-6">
+                        <div class="wow slideInUp item">
+                            <div class="wow slideInUp icon py-5">
+                                <a href="#">
+                                    <img src="4.png" alt="">
+                                </a>
+                            </div>
+                            <h6>GENERAL TREATMENT </h6>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloribus nemo laboriosam dolor fuga
+                                adipisci neque assumenda repudiandae, mollitia corrupti, ducimus alias eos omnis optio
+                                dolore
+                                rem totam voluptatem veniam voluptatum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="wow slideInUp cards py-5">
+        <h1 style="text-align: center;"> <b>Our Expert</b> Doctors </h1>
+        <div class="wow slideInUp container">
+            <div class="wow slideInUp row py-5">
+                <div class="wow slideInUp col-lg-12">
+                    <div class="wow slideInUp card-deck ">
+                        <div class="wow slideInUp card ">
+                            <img class="wow slideInUp card-img-top" src="2.jpg" alt="Card image cap">
+                            <div class="wow slideInUp card-body">
+                                <h5 class="wow slideInUp card-title" style="text-align: center">DR. ROBERT BARRETHION
+                                </h5>
+                                <p class="wow slideInUp card-text" style="text-align: justify">This is a longer card
+                                    with supporting
+                                    text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="wow slideInUp card-text"><small class="wow slideInUp text-muted">Last updated
+                                        3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="wow slideInUp card">
+                            <img class="wow slideInUp card-img-top" src="2.jpg" alt="Card image cap">
+                            <div class="wow slideInUp card-body">
+                                <h5 class="wow slideInUp card-title" style="text-align: center">DR. MARRY LOU</h5>
+                                <p class="wow slideInUp card-text" style="text-align: justify">This card has supporting
+                                    text below as
+                                    a natural lead-in to
+                                    additional content.</p>
+                                <p class="wow slideInUp card-text"><small class="wow slideInUp text-muted">Last updated
+                                        3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="wow slideInUp card">
+                            <img class="wow slideInUp card-img-top" src="2.jpg" alt="Card image cap">
+                            <div class="wow slideInUp card-body">
+                                <h5 class="wow slideInUp card-title" style="text-align: center">DR. SANSA STARK</h5>
+                                <p class="wow slideInUp card-text" style="text-align: justify">This is a wider card with
+                                    supporting
+                                    text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="wow slideInUp card-text"><small class="wow slideInUp text-muted">Last updated
+                                        3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wow slideInUp main2" style="background-image: url(7.jpg); background-size: cover">
+        <div class="wow slideInUp container">
+            <div class="wow slideInUp row">
+                <div class="wow slideInUp col-lg-6 py-5">
+                    <h1 class="wow slideInUp py-5"><b>Request</b> Appointment</h1>
+                    <form>
+                        <div class="wow slideInUp form-row">
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <input type="text" class="wow slideInUp form-control" id="text" placeholder="Name"
+                                    required>
+                            </div>
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <input type="num" class="wow slideInUp form-control" id="number" placeholder="phone"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="wow slideInUp form-row">
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <input type="text" class="wow slideInUp form-control" id="E-mail"
+                                    placeholder="john@gmail.com" required>
+                            </div>
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <input type="date" class="wow slideInUp form-control" id="date" placeholder="Date"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="wow slideInUp form-row">
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <select id="Department" class="wow slideInUp form-control" required>
+                                    <option selected>Choose...</option>
+                                    <option>ORTHOPEDICS</option>
+                                    <option>DIAGNOSTICS</option>
+                                    <option>PSYCOLOGICAL</option>
+                                    <option>X-RAY</option>
+                                </select>
+                            </div>
+                            <div class="wow slideInUp form-group col-md-6 py-3">
+
+                                <select id="inputDoctor" class="wow slideInUp form-control" required>
+                                    <option selected>Choose...</option>
+                                    <option>Doctor</option>
+                                    <option>Diagnostics</option>
+                                    <option>psycological</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wow slideInUp form-group py-3">
+
+                            <textarea class="wow slideInUp form-control" id="inputMessage"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="wow slideInUp btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="wow slideInUp col-lg-6 py-5">
+                    <h1 class="wow slideInUp py-5"><b>Find</b> Us</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0859354375393!2d77.20785691485666!3d28.567182093786947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce26f903969d7%3A0x8367180c6de2ecc2!2sAll%20India%20Institute%20Of%20Medical%20Sciences%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1570096840761!5m2!1sen!2sin"
+                        width="450" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="wow slideInUp py-5" style="background-color: rgb(19, 38, 70)">
+        <div class="wow slideInUp container">
+            <div class="wow slideInUp row">
+                <div class="wow slideInUp col-lg-4">
+                    <h1 style="color: white">Our Address</h1>
+                    <br>
+                    <span style="color: gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        consequuntur! Lorem ipsum
+                        dolor sit amet.</span>
+                    <i class="wow slideInUp fas fa-map-marker-alt py-5" style="font-size: 20px; color:gray"> Modamba, NY
+                        80021, United
+                        States</i>
+                    <a href="#"><i class="wow slideInUp fas fa-envelope " style="font-size: 20px; color: gray">
+                            supportus@gmail.com</i></a>
+                    <br><i class="wow slideInUp fas fa-phone py-5" style="font-size: 20px; color: gray">
+                        1-800-700-6200</i>
+                </div>
+                <div class="wow slideInUp col-lg-4">
+                    <h2 style="color: gray">Services</h2>
+                    <ul class="wow slideInUp py-5">
+                        <li class="wow slideInUp py-2" style="color: gray"><a href="#"
+                                style="color: gray">Orthopedic</a></li>
+                        <li class="wow slideInUp py-2" style="color: gray"><a href="#"
+                                style="color: gray">Orthopedic</a></li>
+                        <li class="wow slideInUp py-2" style="color: gray"><a href="#"
+                                style="color: gray">Orthopedic</a></li>
+                        <li class="wow slideInUp py-2" style="color: gray"><a href="#"
+                                style="color: gray">Orthopedic</a></li>
+                        <li class="wow slideInUp py-2" style="color: gray"><a href="#"
+                                style="color: gray">Orthopedic</a></li>
+                    </ul>
+                </div>
+                <div class="wow slideInUp col-lg-4">
+                    <h3 style="color: gray">Recent Post</h3>
+                    <ul class="wow slideInUp py-5">
+                        <li style="color: gray">list1</li>
+                        <li style="color: gray">list2</li>
+                        <li style="color: gray">list3</li>
+                        <li style="color: gray">list4</li>
+                        <li style="color: gray">list5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wow slideInUp footer">
+        <h3 style="text-align: center">&copy all acopyright reserved</h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
